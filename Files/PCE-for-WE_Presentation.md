@@ -432,9 +432,9 @@ $y = I\,e^{-a \, t}$
 
 $a \sim Uniform(0.6,0.8)$
 
-$I \sim Weibull(k=2.,$
+$I \sim Weibull(k=2.,A=2)$
 
-$\quad \quad  A=6(0.3+a)^4)$
+$Joe(CDF(a),CDF(I),theta=5.)$
 
 $ $
 
@@ -482,9 +482,9 @@ $y = I\,e^{-a \, t}$
 
 $a \sim Uniform(0.6,0.8)$
 
-$I \sim Weibull(k=2.,$
+$I \sim Weibull(k=2.,A=2)$
 
-$\quad \quad  A=6(0.3+a)^4)$
+$Joe(CDF(a),CDF(I),theta=5.)$
 
 $ $
 
@@ -512,8 +512,8 @@ $ $
 
 \begin{figure}[hc!]
   \includegraphics[width=\textwidth]{Figures/5b_Joe_copula_bot.pdf}\\
-  \includegraphics[width=0.4\textwidth]{Figures/4b_Convergence_E_u.pdf}
-  \includegraphics[width=0.4\textwidth]{Figures/4b_Convergence_V_u.pdf}
+  \includegraphics[width=0.4\textwidth]{Figures/5b_Joe_copula_Convergence_E_u.pdf}
+  \includegraphics[width=0.4\textwidth]{Figures/5b_Joe_copula_Convergence_V_u.pdf}
 \end{figure}
 
 ------------------
