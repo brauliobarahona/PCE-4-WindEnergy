@@ -1,0 +1,103 @@
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usefonttheme[onlymath]{serif}
+\usepackage{tikz}
+\usepackage{smartdiagram}
+\usetikzlibrary{arrows}
+\tikzset{every shadow/.style={fill=none,shadow scale=0}}
+%\tikzset{module/.style={top color=\col,bottom color=\col,}}
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+
+% \numberwithin{equation}{subsection}
+
+\newcommand{\highlight}[1]{%
+  \colorbox{red!40}{$\displaystyle#1$}}
+\newcommand{\highlightBlue}[1]{%
+  \colorbox{blue!40}{$\displaystyle#1$}}
+\newcommand{\dg}{$^\circ$ }
+\newcommand{\eq}[2]{\begin{equation} #1 \label{#2} \end{equation}}
+\newcommand{\df}[2]{\frac{\partial #1}{\partial #2}}
+
+\usepackage{catoptions}
+\newcommand*\Nset[1][1]{%
+  \{1%
+  \cptifcasse\ifstrcmpTF{#1}
+    {1}{}
+    {2}{, 2}
+    {3}{, 2, 3}
+    {4}{, 2, 3, 4}
+  \elseif
+    , 2, \dots, #1%
+  \endif
+  \}%
+}
+
+
+\newcommand{\mt}[1]{\overline{#1}}
+\newcommand{\mAD}[1]{\langle #1 \rangle_{AD}}
+
+\newcommand{\rvar}[1]{\mathbf{#1}}
+\newcommand{\evar}[1]{\mathbf{\epsilon_{#1}}}
+
+\newcommand{\vc}{\mathbf{c}}
+\newcommand{\vw}{\mathbf{w}}
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\vz}{\mathbf{z}}
+\newcommand{\vp}{\boldsymbol{\theta}}
+
+\newcommand{\vym}{\tilde{\mathbf{y}}}
+\newcommand{\vxm}{\tilde{\mathbf{x}}}
+
+\newcommand{\vxep}{\varepsilon_{\vx}}
+\newcommand{\vyep}{\varepsilon_{\vy}}
+
+\newcommand{\vZ}{\mathbf{Z}}
+\newcommand{\vY}{\mathbf{Y}}
+\newcommand{\vX}{\mathbf{X}}
+\newcommand{\vP}{\boldsymbol{\Theta}}
+
+\newcommand{\model}{\mathcal{M}}
+\newcommand{\poly}{\pi}
+\newcommand{\mpoly}{\boldsymbol{\Psi}}
+
+\newcommand{\pdf}{\mathrm{PDF}}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\std}{\mathbb{S}}
+\newcommand{\variance}{\mathbb{V}}
+\newcommand{\covar}{\mathbb{C}}
+\newcommand{\jacob}{\mathbb{J}}
+
+\newcommand{\vpest}{\boldsymbol{\hat{\vp}}}
+\newcommand{\post}{\mathrm{PDF}_{\mathrm{post}}}
+\newcommand{\prior}{\mathrm{PDF}_{\mathrm{prior}}}
+\newcommand{\like}{\mathcal{L}}
+
+\newcommand{\umf}{\overline{U}_{\mathrm{H free}}}
+\newcommand{\um}{\overline{U}}
+\newcommand{\du}{\Delta \overline{u}}
+\newcommand{\vm}{\overline{v}}
+\newcommand{\prm}{\overline{p}}
+\newcommand{\wdm}{\overline{\theta}}
+
+\newcommand{\WD}{\mathrm{WS}}
+\newcommand{\WS}{\mathrm{WD}}
+\newcommand{\PWF}{\mathrm{P}_{\mathrm{WF}}}
+
+\newcommand{\PT}{\overline{P_{T}}}
+\newcommand{\Pf}{\overline{\mathrm{P}_{\mathrm{WF}}}}
+\newcommand{\Iw}{I_{wake}}
+\newcommand{\TT}{\overline{T_{T}}}
+
+% \usepackage[ansinew]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,textcomp}
+\usepackage{breakurl}
+
+\usetheme[department=vindenergi]{DTU}
+
+\usepackage{scrextend}
