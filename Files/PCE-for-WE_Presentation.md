@@ -430,7 +430,7 @@ $ $
 
 $y = I\,e^{-a \, t}$
 
-$a \sim Uniform(0.6,0.8)$
+$a \sim Normal(\mu=.8,\sigma=.2)$
 
 $I \sim Weibull(k=2.,A=2)$
 
@@ -480,7 +480,7 @@ $ $
 
 $y = I\,e^{-a \, t}$
 
-$a \sim Uniform(0.6,0.8)$
+$a \sim Normal(\mu=.8,\sigma=.2)$
 
 $I \sim Weibull(k=2.,A=2)$
 
